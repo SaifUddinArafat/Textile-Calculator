@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Calculator</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="scripts/script.js">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+<section class="header">
+    <h1>Textile Calculator</h1>
+</section>
+
+<section id="calculator">
+    <div class="container">
+        <h3>Count Calculator</h3>
+
+        <p class="warningText">
+            Put the value according to the count table. Like if you want to claculate English count then
+            length have to be in Yard and Weight have to be in Pound(lb). Unless the result could be wrong.
+        </p>
+        
+        <!-- Different Converts Link -->
+        <div class="links">
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-gram.htm" target="_blank"> <button>Grain to Gram</button> </a>
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-pound.htm" target="_blank"><button>Grain to Pound</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-kilogram.htm" target="_blank"><button>Grain to kg</button></a>
+            <a href="https://www.unitconverters.net/length/meters-to-yards.htm" target="_blank"><button>Meter to Yards</button></a>
+            <a href="https://www.unitconverters.net/length/yards-to-meters.htm" target="_blank"><button>Yards to Meter</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/lbs-to-kg.htm" target="_blank"><button>Pound to kg</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/pounds-to-grams.htm" target="_blank"><button>Pound to Gram</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/pound-to-grain.htm" target="_blank"><button>Pound to Grain</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/g-to-kg.htm" target="_blank"><button>Gram to Kg</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/kg-to-g.htm" target="_blank"><button>Kg to Gram</button></a>
+        </div>
+
+        <div class="calSec">
+            <p>
+                Sample length <input type="text" id="sampleLen" name="sampleLen" placeholder="Enter length"><br><br>
+                Sample Weight <input type="text" id="sampleWt" name="sampleWt" placeholder="Enter Weight">
+            </p>
+            
+            <p>
+                Indirect System
+                <input type="radio" name="count" id="ecount" value="ecount" checked><b>Ne</b>
+                <input type="radio" name="count" id="mcount" value="mcount"><b>Nm</b>
+                <input type="radio" name="count" id="worcount" value="worcount"><b>Worsted</b>
+                <input type="radio" name="count" id="wolcount" value="wolcount"><b>Woolen</b>
+                <br><br>
+                Direct System
+                <input type="radio" name="count" id="tcount" value="tcount"><b>Tex</b>
+                <input type="radio" name="count" id="dcount" value="dcount"><b>Denier</b>
+                <input type="radio" name="count" id="decicount" value="decicount"><b>DeciTex</b>
+                <input type="radio" name="count" id="milicount" value="milicount"><b>MiliTex</b>
+                <input type="radio" name="count" id="jcount" value="jutecount"><b>JuteCount</b>
+            </p>
+            
+            <input type="radio" name="count" id="allcount" value="allcount" unchecked><b>All</b>
+            <br><br>
+            <button type="submit" onclick="output()">Calculate</button>
+        </div>
+
+        <div class="calOutput">
+            <h3 id="output">Count is</h3>
+            <h4 id="alert">Alert about length, Weight Unit</h4>
+            <h4 id="check">Check Please</h4>
+            
+            <ul type="none" class="calOutput">
+                <li id="result"></li>
+                <li id="result1"></li>
+                <li id="result2"></li>
+                <li id="result3"></li>
+                <li id="result4"></li>
+                <li id="result5"></li>
+                <li id="result6"></li>
+                <li id="result7"></li>
+                <li id="result8"></li>
+            </ul>
+        </div>
+
+        
+    </div>
+</section>
+
+<section class="info">
+    <div class="container">
+        
+        <!-- Information about direct and indirect system -->
+        <div id="info">    
+            <ul type="star" style="font-weight: bold;">
+                <li> In case of indirect counnt the length is always fixed. So the count is mass per unit length</li>
+                <li>Higher the count finner the yarn is.</li>
+                <li> In case of direct counnt the length is always fixed. So the count is mass per unit length.</li>
+                <li>Higher the count coarser the yarn is</li> 
+            </ul>
+            
+        </div>
+        
+        <!-- Indirect and Direct System table -->
+        <div class="row">
+            <div class="col-6">
+                <!-- indirectsystem table -->
+                <div id="indirect_system">
+                    <h3>Count for Indirect System</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Numbering System</th>
+                                <th>Unit of length</th>
+                                <th>Unit of Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>English Count(Ne)</td>
+                                <td>840 yds</td>
+                                <td>1 Pound (1lb)</td>
+                            </tr>
+                            <tr>
+                                <td>Metric Count(Nm)</td>
+                                <td>1000 m</td>
+                                <td>1 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Worsted Count</td>
+                                <td>560 yds</td>
+                                <td>1 lb</td>
+                            </tr>
+                            <tr>
+                                <td>Woolen Count</td>
+                                <td>256 yds</td>
+                                <td>1 lb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <!-- Direct system table -->
+                <div id="direct_system">
+                    <h3>Count for Direct System</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Numbering System</th>
+                                <th>Unit of length</th>
+                                <th>Unit of Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tex</td>
+                                <td>1000 meters</td>
+                                <td>No of grams</td>
+                            </tr>
+                            <tr>
+                                <td>Denier</td>
+                                <td>9000 m</td>
+                                <td>No of grams</td>
+                            </tr>
+                            <tr>
+                                <td>DeciTex</td>
+                                <td>10,000 meters</td>
+                                <td>No of grams</td>
+                            </tr>
+                            <tr>
+                                <td>MiliTex</td>
+                                <td>1000 meters</td>
+                                <td>No of miligrams</td>
+                            </tr>
+                            <tr>
+                                <td>KiloTex</td>
+                                <td>1000m</td>
+                                <td>No of Kilograms</td>
+                            </tr>
+                            <tr>
+                                <td>Jute Count</td>
+                                <td>1 spyndle(14,400 yds)</td>
+                                <td>No of Pounds(lb)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formula for counnt Calculation -->
+        <div class="formula">
+            <p>
+                Indirect Count = (sameple length * unit weight of system) / (unit length of system * sample weight) <br>
+                Direct Count = (sameple weight * unit length of system) / (unit weight of system * sample langth)
+            </p>
+        </div>
+
+    </div> 
+</section>
+
+        
+<section>
+    <h3>GSM Calculator</h3>
+</section>
+<secction class="footer"></secction>
+</body>
+</html>
