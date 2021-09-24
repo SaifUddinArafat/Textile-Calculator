@@ -6,6 +6,10 @@
     <title>Count Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js">
+        function countTable(){
+            var ctable = document.getElemetById("countTable");
+            alert(ctable);
+        }
         function output(){
             var sampleLen = Number(document.getElementById("sampleLen").value);
             var sampleWt = Number(document.getElementById("sampleWt").value);
@@ -92,7 +96,7 @@
         <h3>Count Calculator</h3>
 
         <p class="warningText">
-            Put the value according to the count table. Like if you want to claculate English count then
+            Put the value according to the <button type="button" onclick="countTable()">Count-Table</button>. Like if you want to claculate English count then
             length have to be in Yard and Weight have to be in Pound(lb). Unless the result could be wrong.
         </p>
         
@@ -173,7 +177,7 @@
         </div>
         
         <!-- Indirect and Direct System table -->
-        <div class="row">
+        <div class="row" id="countTable">
             <div class="col-6">
                 <!-- indirectsystem table -->
                 <div id="indirect_system">
