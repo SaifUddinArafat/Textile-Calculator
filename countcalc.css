@@ -1,0 +1,107 @@
+body{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#calculator{
+    width: 100%;
+    padding: 1%;
+    /* float: right; */
+    background-color: rgb(180, 116, 116);
+    box-shadow: black;
+}
+#calculator h3{
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: chartreuse;
+    box-shadow: black;
+    border: solid 5px;
+}
+
+#calculator .warningText{
+    color: rgba(39, 7, 7, 0.808);
+    opacity: 80%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#calculator .links{
+    margin: 10px;
+}
+
+#calculator .links button{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 2px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+#calculator .calSec{
+    background-color: tomato;
+    padding: 15px;
+    text-align: center;
+}
+
+#calculator .calSec button{
+    width: 25%;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(54, 25, 82);
+    background-color: rgb(150, 29, 7);
+}
+
+#claculator .calOutput{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+#calculator .calOutput #alert{
+    padding: 10px;
+    margin: 10px 0px 5px 0px;
+    background-color: gold;
+}
+#calculator .calOutput #output{
+    text-align: center;
+    color: forestgreen;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: gold;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#calculator .calOutput #check{
+    padding: 10px;
+    color: darkred;
+    background-color: gold;
+}
+#indirect_system{
+    /* width: 38%; */
+    /* padding: 1%;
+    display: inline-block; */
+    overflow: none;
+    text-align: center;
+    background-color: crimson;
+}
+
+#direct_system{
+    /* width: 38%; */
+    /* padding: 1%;
+    display: inline-block; */
+    overflow: none;
+    text-align: center;
+    background-color: crimson;
+}
+
+table{
+    margin-left: 1%;
+    width: 98%;
+}
