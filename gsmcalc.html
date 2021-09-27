@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSM Calculator</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/countcalc.css">
+    <link rel="stylesheet" href="scripts/script.js">
+    <script src="scripts/gmcalc.js"></script>
+</head>
+<body>
+<section id="header">
+    <h1>Textile Calculator</h1>
+    <marquee behavior="" direction=""><h3>This Site is Still Underconstraction. &copy; Copyright by Saif </h3></marquee>
+</section>
+
+<section id="pagination">
+    <a href="javascript:history.go(-1)"onMouuseOver="self.status.referrer:return true"> <button>&LessLess; Back</button></a>
+</section>
+
+<section id="calculator">
+    <div class="container">
+        <h3>GSM Calculator</h3>
+
+        <!-- Different Converts Link -->
+        <div class="links">
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-gram.htm" target="_blank"> <button>Grain to Gram</button> </a>
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-pound.htm" target="_blank"><button>Grain to Pound</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-kilogram.htm" target="_blank"><button>Grain to kg</button></a>
+            <a href="https://www.unitconverters.net/length/meters-to-yards.htm" target="_blank"><button>Meter to Yards</button></a>
+            <a href="https://www.unitconverters.net/length/yards-to-meters.htm" target="_blank"><button>Yards to Meter</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/lbs-to-kg.htm" target="_blank"><button>Pound to kg</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/pounds-to-grams.htm" target="_blank"><button>Pound to Gram</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/pound-to-grain.htm" target="_blank"><button>Pound to Grain</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/g-to-kg.htm" target="_blank"><button>Gram to Kg</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/kg-to-g.htm" target="_blank"><button>Kg to Gram</button></a>
+        </div>
+
+        <div class="notice">
+            <p style="text-align: center; color: rgba(105, 10, 10, 0.747);"> 
+                <b> 
+                    If you select Using GSM cutter  option you only have to put the weight othe field is not necessery to fill <br>
+                    But when you select without Gsm cutter option you have to fill all the box unless you won't find the result
+                </b>
+            </p>
+        </div>
+
+        <div class="calSec">
+            <p>
+                Sample weight <input type="text" id="weight" name="weight" placeholder="Weight in Grams"><br><br>
+                Sample Length <input type="text" id="length" name="length" placeholder="Enter sample length"><br><br>
+                Sample width <input type="text" id="width" name="width" placeholder="Enter sample width">
+            </p>
+            
+            <p>
+                <input type="radio" name="gsm" id="gsm1" value="gsm" checked> <b>Using GSM Cutter (You have to meassure the weight after cutting the fabric through GSM Cutter)</b>
+                <br>
+                <input type="radio" name="gsm" id="gsm2" value="gsm"> <b>Without GSM Cutter(Provide proper weight and length of the material)</b>
+            </p>
+            
+            <button type="submit" onclick="gsm()">GSM</button>
+        </div>
+
+        <div class="calOutput">
+            <h3 id="output">Gsm is</h3>
+            <h3 id="check"></h3>
+        </div>        
+    </div>
+</section>
+<section id="info">
+    <div class="withgsmcutter">
+        <h2>GSM Calculation Method Using GSM Cutter:</h2>
+        <p><b>N.B: This calculation is mainly used for Textile materials.</b></p>
+        <ol>
+            <li>Firstly, you have to cut 5pcs swatches by sing GSM cutter from the different parts of fabrics.</li>
+            <li>Measure the weight of each cutting swatches with the help of weighing balance in one by one method.</li>
+            <li>Calculate the average weight of cutting swatches.</li>
+            <li>Now, by multiplying “average cutting swatch weight” with 100, we can easily get the actual fabric’s GSM.</li>
+        </ol>
+        <p>
+            <b>N.B: Area of round GSM cutter is (1/100) m2</b> <br>
+            <b>Fabric’s GSM = Average cutting swatch weight × 100</b>
+        </p>
+    </div>
+    <div class="nogsmcutter">
+        <h2>GSM Calculation Without GSM Cutter:</h2>
+        <b>N.B: This calculation is commonly used for nonwoven materials, paper, plastic and other thin materials.</b>
+        <ol>
+            <li>Measure the width of the sample in Meter </li>
+            <li>Meassure the length of the sample in Meter</li>
+            <li>Measure the weight of the sample in Gram</li>
+            <li>Now devide the sample weight by the area of the sample</li>
+        </ol>
+        <p>
+            <b>GSM is = (sample weight in gm)/(sample length in meter * sample width in meter)</b>
+        </p>
+    </div>
+</section>
+<secction id="footer">
+    <div id="contactinfo">
+        <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
+        <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+    </div>
+    <div class="" id="copyright">
+        <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
+    </div>
+</secction>
+</body>
+</html>
