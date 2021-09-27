@@ -6,43 +6,82 @@ h1, h2, h3, h4, h5, h6{
     padding: 0px;
 }
 body{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 97%;
+    background-color: coral;
 }
-.header{
+#header{
     width: 100%;
     margin-top: -10px;
-    padding-left: 10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    padding-right: 15px;/*15px for Mobile 45px for pc */
     background-color: black;
 }
-.header h1{
+
+#header marquee{
+    color: brown;
+    background-color: cornsilk;
+}
+#header h1{
     text-align: center;
     color: whitesmoke;
-    padding: 20px;
-}
-#calculator{
-    width: 100%;
-    padding: 1%;
-    /* float: right; */
-    background-color: rgb(180, 116, 116);
-    box-shadow: black;
-}
-
-#calculator .warningText{
-    color: rgba(39, 7, 7, 0.808);
-    opacity: 80%;
-    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: -10px;
     font-weight: bold;
+    font-size: 35px;
+}
+#pagination button{
+    color: rgb(173, 150, 196);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    width: 90px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: rgba(1, 12, 43, 0.801);
+}
+
+#options button{
+    /* text-transform: uppercase; */
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkblue;
+    color: white;
+}
+
+
+
+#contactinfo{
+    margin-bottom: -10px;
+    margin-left: -10px;
+    padding-right: 15px; /*15px for Mobile 45px for pc */
+    width: 100%;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 20px; */
+    background-color: rgb(196, 32, 4);
+    color: rgb(245, 244, 244);
 }
-
-#calculator .links{
-    margin: 10px;
+#contactinfo button{
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(32, 17, 17);
+    background-color: cyan;
 }
-
-#calculator .links button{
-    width: 20%;
+#footer .links button{
+    width: 150px;
+    height: 50px;
     padding: 10px;
     margin: 2px;
     background-color: blue;
@@ -50,64 +89,32 @@ body{
     font-weight: bold;
 }
 
-#calculator .calSec{
-    background-color: tomato;
-    padding: 15px;
-    text-align: center;
-}
-
-#calculator .calSec button{
-    width: 250px;
-    height: 35px;
-    font-size: 20px;
+#footer .links button a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
     font-weight: bold;
-    color: rgb(54, 25, 82);
-    background-color: rgb(150, 29, 7);
+    font-size: 18px;
 }
 
-#claculator .calOutput{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-
-}
-#calculator .calOutput #alert{
-    padding: 10px;
-    margin: 10px 0px 5px 0px;
-    background-color: gold;
-}
-#calculator .calOutput #output{
+#footer #copyright{
+    font-weight: bold;
     text-align: center;
-    color: forestgreen;
-    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cornsilk;
+    background-color: black;
     padding: 10px;
-    background-color: gold;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#calculator .calOutput #check{
-    padding: 10px;
-    color: darkred;
-    background-color: gold;
-}
-#indirect_system{
-    /* width: 38%; */
-    /* padding: 1%;
-    display: inline-block; */
-    overflow: none;
-    text-align: center;
-    background-color: crimson;
+    margin-bottom: -8px;
 }
 
-#direct_system{
-    /* width: 38%; */
-    /* padding: 1%;
-    display: inline-block; */
-    overflow: none;
-    text-align: center;
-    background-color: crimson;
+#footer #copyright a {
+    text-decoration: none;
+    color: blanchedalmond;
 }
 
-table{
-    width: 95%;
+#footer #copyright #myname{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 20px;
 }
