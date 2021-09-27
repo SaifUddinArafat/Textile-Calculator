@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gram Calculator</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/countcalc.css">
+    <script src="scripts/gmcalc.js"></script>
+    <style>
+        .links button a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<section id="header">
+    <h1>Textile Calculator</h1>
+    <marquee behavior="" direction=""><h3>This Site is Still Underconstraction. &copy; Copyright by Saif </h3></marquee>
+</section>
+
+<section id="pagination">
+    <a href="javascript:history.go(-1)"onMouuseOver="self.status.referrer:return true"> <button>&LessLess; Back</button></a>
+</section>
+
+<section id="calculator">
+    <div class="container">
+        <h3>Gram Calculator</h3>
+
+        <!-- Different Converts Link -->
+        <div class="links">
+            <h4>If the Following Weight unit is not enough for you then Click on MORE_BUTTON and Check out The whole page.</h4>
+            <button><a href="https://www.unitconverters.net/weight-and-mass/kilogram-to-ton-short.htm" target="_blank">More</a></button>
+        </div>
+
+        <div class="calSec">
+            <p>
+                Weight in gm <input type="text" id="weight" name="weight" placeholder="Enter the Weight in gm"><br><br>
+            </p>
+            
+            <p>
+                <input type="radio" name="gm" id="pound" value="lb" checked> <b>Pound(lb)</b>
+                <input type="radio" name="gm" id="kg" value="kg"> <b>Kilogram(kg)</b>
+                <input type="radio" name="gm" id="mg" value="mg"> <b>Miligram(mg)</b>
+                <input type="radio" name="gm" id="grain" value="lb"> <b>Grain</b>
+                <input type="radio" name="gm" id="ounce" value="lb"> <b>Ounce(Oz)</b>
+            </p>
+            
+            <input type="radio" name="gm" id="all" value="allcount" unchecked><b>All</b>
+            <br><br>
+            <button type="submit" onclick="gm()">Calc</button>
+        </div>
+
+        <div class="calOutput">
+            <h3 id="output">Result is</h3>
+            <br>
+            <h3 id="allresult"></h3>
+            <ul type="none" class="calOutput">
+                <h4><li id="result"></li></h4>
+                <h4><li id="result1"></li></h4>
+                <h4><li id="result2"></li></h4>
+                <h4><li id="result3"></li></h4>
+                <h4><li id="result4"></li></h4>
+            </ul>
+        </div>        
+    </div>
+</section>
+
+<secction id="footer">
+    <div id="contactinfo">
+        <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
+        <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+    </div>
+    <div class="" id="copyright">
+        <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
+    </div>
+</secction>
+</body>
+</html>
