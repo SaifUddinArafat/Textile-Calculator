@@ -1,21 +1,33 @@
-function gsm(){
-    var slen = Number(document.getElementById("length").value); 
-    var swt = Number(document.getElementById("weight").value);
-    var swd = Number(document.getElementById("width").value);
-    
-    var gsm1 = (swt * 100);
-    var gsm2 = (swt) / (slen * swd);
+function gm(){
+    var wt = Number(document.getElementById("weight").value);
 
-    if(document.getElementById("gsm1").checked){
-        document.getElementById("output").innerHTML = "The GSM is : "+ String(gsm1) +" GSM";
-        document.getElementById("check").innerHTML = "Your provided width is: "+String(swt)+
-        "Warnning!!! You have to put this value after Cutting the material with gsm cutter and then measuring it";
+    var gmTopound = (wt *  0.0022046226);
+    var gmTokg = (wt * 0.001);
+    var gmTograin = (wt * 15.432358353);
+    var gmTomiligm = (wt * 1000);
+    var gmToounce = (wt * 0.0352739619);
+
+    if (document.getElementById("pound").checked){
+        document.getElementById("output").innerHTML = "Weight is : "+String(gmTopound)+" lb";
+    }
+    else if (document.getElementById("kg").checked){
+        document.getElementById("output").innerHTML = "Weight is : "+String(gmTokg)+ " Kg";
+    }
+    else if (document.getElementById("mg").checked){
+        document.getElementById("output").innerHTML = "Weight is : "+String(gmTomiligm)+ " mg";
+    }
+    else if (document.getElementById("grain").checked){
+        document.getElementById("output").innerHTML = "Weight is : "+String(gmTograin)+ " grain";
+    }
+    else if (document.getElementById("ounce").checked){
+        document.getElementById("output").innerHTML = "Weight is : "+String(gmToounce)+" Oz";
     }
     else{
-        document.getElementById("output").innerHTML = "The GSM is : "+ String(gsm2) + " GSM";
-        document.getElementById("check").innerHTML = "Your provided weight is: "+String(swt)+ 
-        ", your provied length is : "+String(slen)+
-        ", your provided width is : "+String(swd)+
-        " Warnning!!! You have to put this value after measuring the length, width, and height of your sample";
+        document.getElementById("allresult").innerHTML = "Here is list of Grain to different common weight unit: ";
+        document.getElementById("result").innerHTML = "Weight in pound is : "+String(gmTopound)+" lb";
+        document.getElementById("result1").innerHTML = "Weight in Kg is : "+String(gmTokg)+ " kg";
+        document.getElementById("result2").innerHTML = "Weight in Mili-gram is : "+String(gmTomiligm)+ " mg";
+        document.getElementById("result3").innerHTML = "Weight in grain is : "+String(gmTograin)+ " grain";
+        document.getElementById("result4").innerHTML = "Weight in ounce is : "+String(gmToounce)+ " Oz";
     }
 }
