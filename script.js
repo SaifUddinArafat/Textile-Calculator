@@ -54,9 +54,9 @@ function output(){
         document.getElementById("check").innerHTML = "For MiliTex : " + "Sample length have to be in Meters and Weight have to be in Miligrams.";
     }
     else if (document.getElementById("jcount").checked){
-        document.getElementById("output").innerHTML = "Metric Count: "+String(jute)+" Jute Count";
+        document.getElementById("output").innerHTML = "Jute Count: "+String(jute)+" Jute Count";
         document.getElementById("alert").innerHTML = "If Length is :"+String(sampleLen)+" yds"+" Weight is : "+String(sampleWt)+" Pound";
-        document.getElementById("check").innerHTML = "For English Count: " + "Sample length have to be in Yards and Weight have to be in Pound.";
+        document.getElementById("check").innerHTML = "For Jute Count: " + "Sample length have to be in Yards and Weight have to be in Pound.";
     }
     else{
         document.getElementById("result").innerHTML = "English Count: "+String(ne)+" Ne";
