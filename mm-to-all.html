@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meter Calculator</title>
+    <title>Milimeter Calculator</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/countcalc.css">
-    <script src="scripts/metercalc.js"></script>
+    <script src="scripts/mmcalc.js"></script>
     <style>
         .links button a{
             color: white;
@@ -30,7 +30,7 @@
 
 <section id="calculator">
     <div class="container">
-        <h3>Meter Calculator</h3>
+        <h3>Milimeter Calculator</h3>
 
         <!-- Different Converts Link -->
         <div class="links">
@@ -40,22 +40,22 @@
 
         <div class="calSec">
             <p>
-                Length in Meter <input type="text" id="len" name="len" placeholder="Enter the len in Meter"><br><br>
+                Length in mm <input type="text" id="len" name="len" placeholder="Enter the len in mm"><br><br>
             </p>
             
             <p>
-                <input type="radio" name="meter" id="yds" value="yds" checked> <b>Yard(yds)</b>
-                <input type="radio" name="meter" id="inch" value="inch"> <b>Inch</b>
-                <input type="radio" name="meter" id="feet" value="feet"> <b>Feet(foot)</b>
-                <input type="radio" name="meter" id="km" value="km"> <b>Kilometer(Km)</b>
-                <input type="radio" name="meter" id="mm" value="mm"> <b>Milimeter(mm)</b>
-                <input type="radio" name="meter" id="cm" value="cm"> <b>Centimeter(cm)</b>
-                <input type="radio" name="meter" id="miles" value="miles"> <b>Miles</b>
+                <input type="radio" name="mm" id="meter" value="m" checked> <b>Meter(m)</b>
+                <input type="radio" name="mm" id="yds" value="yds"> <b>Yards(yds)</b>
+                <input type="radio" name="mm" id="inch" value="inch"> <b>Inch</b>
+                <input type="radio" name="mm" id="miles" value="miles"> <b>Miles</b>
+                <input type="radio" name="mm" id="km" value="km"> <b>Kilometer(km)</b>
+                <input type="radio" name="mm" id="cm" value="cm"> <b>Centimeter(cm)</b>
+                <input type="radio" name="mm" id="feet" value="feet"> <b>feet(foot)</b>
             </p>
             
-            <input type="radio" name="meter" id="all" value="allcount" unchecked><b>All</b>
+            <input type="radio" name="mm" id="all" value="allcount" unchecked><b>All</b>
             <br><br>
-            <button type="submit" onclick="meter()">Calc</button>
+            <button type="submit" onclick="mm()">Calc</button>
         </div>
 
         <div class="calOutput">
