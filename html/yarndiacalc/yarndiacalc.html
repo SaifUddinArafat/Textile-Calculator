@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grain Calculator</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/countcalc.css">
+    <link rel="stylesheet" href="scripts/script.js">
+    <script src="scripts/grain.js"></script>
+</head>
+<body>
+<section id="header">
+    <h1>Textile Calculator</h1>
+    <marquee behavior="" direction=""><h3>This Site is Still Underconstraction. &copy; Copyright by Saif </h3></marquee>
+</section>
+
+<section id="pagination">
+    <a href="javascript:history.go(-1)"onMouuseOver="self.status.referrer:return true"> <button>&LessLess; Back</button></a>
+    <a href="index.html"> <button>HOME</button></a>
+</section>
+
+<section id="calculator">
+    <div class="container">
+        <h3>Grain Calculator</h3>
+
+        <!-- Different Converts Link -->
+        <div class="links">
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-gram.htm" target="_blank"> <button>Grain to Gram</button> </a>
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-pound.htm" target="_blank"><button>Grain to Pound</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/grain-to-kilogram.htm" target="_blank"><button>Grain to kg</button></a>
+            <a href="https://www.unitconverters.net/length/meters-to-yards.htm" target="_blank"><button>Meter to Yards</button></a>
+            <a href="https://www.unitconverters.net/length/yards-to-meters.htm" target="_blank"><button>Yards to Meter</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/lbs-to-kg.htm" target="_blank"><button>Pound to kg</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/pounds-to-grams.htm" target="_blank"><button>Pound to Gram</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/pound-to-grain.htm" target="_blank"><button>Pound to Grain</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/g-to-kg.htm" target="_blank"><button>Gram to Kg</button></a>
+            <a href="https://www.unitconverters.net/weight-and-mass/kg-to-g.htm" target="_blank"><button>Kg to Gram</button></a>
+        </div>
+
+        <div class="calSec">
+            <p>
+                Weight in Grain <input type="text" id="weight" name="weight" placeholder="Enter the Weight in grain"><br><br>
+            </p>
+            
+            <p>
+                <input type="radio" name="grain" id="kg" value="kg" checked> <b>Kilogram(kg)</b>
+                <input type="radio" name="grain" id="gm" value="gm"> <b>Gram(g)</b>
+                <input type="radio" name="grain" id="mg" value="mg"> <b>Miligram(mg)</b>
+                <input type="radio" name="grain" id="lb" value="lb"> <b>Pound(lb)</b>
+            </p>
+            
+            <input type="radio" name="grain" id="all" value="allcount" unchecked><b>All</b>
+            <br><br>
+            <button type="submit" onclick="grain()">Calc</button>
+        </div>
+
+        <div class="calOutput">
+            <h3 id="output">Result is</h3>
+            <br>
+            <h3 id="allresult"></h3>
+            <ul type="none" class="calOutput">
+                <h4><li id="result"></li></h4>
+                <h4><li id="result1"></li></h4>
+                <h4><li id="result2"></li></h4>
+                <h4><li id="result3"></li></h4>
+            </ul>
+        </div>        
+    </div>
+</section>
+
+<secction id="footer">
+    <div id="contactinfo">
+        <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
+        <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+    </div>
+    <div class="" id="copyright">
+        <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
+    </div>
+</secction>
+</body>
+</html>

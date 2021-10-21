@@ -1,0 +1,123 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 97%;
+    background-color: coral;
+}
+#header{
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    padding-right: 15px;/*15px for Mobile 45px for pc */
+    background-color: black;
+}
+
+#header marquee{
+    color: brown;
+    background-color: cornsilk;
+}
+#header h1{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: -10px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#pagination button{
+    margin-left: 18%;
+    margin-right: 10%;
+    color: rgb(173, 150, 196);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    width: 90px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: rgba(1, 12, 43, 0.801);
+}
+
+#options button{
+    /* text-transform: uppercase; */
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkblue;
+    color: white;
+}
+
+
+
+#contactinfo{
+    margin-bottom: -10px;
+    margin-left: -10px;
+    padding-right: 15px; /*15px for Mobile 45px for pc */
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding: 20px; */
+    background-color: rgb(196, 32, 4);
+    color: rgb(245, 244, 244);
+}
+#contactinfo button{
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(32, 17, 17);
+    background-color: cyan;
+}
+#footer .links button{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 2px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+#footer .links button a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#footer #copyright{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cornsilk;
+    background-color: black;
+    padding: 10px;
+    margin-bottom: -8px;
+}
+
+#footer #copyright a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+#footer #copyright #myname{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 20px;
+}

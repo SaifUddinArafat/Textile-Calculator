@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometer Calculator</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/countcalc.css">
+    <script src="scripts/kmclac.js"></script>
+    <style>
+        .links button a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<section id="header">
+    <h1>Textile Calculator</h1>
+    <marquee behavior="" direction=""><h3>This Site is Still Underconstraction. &copy; Copyright by Saif </h3></marquee>
+</section>
+
+<section id="pagination">
+    <a href="javascript:history.go(-1)"onMouuseOver="self.status.referrer:return true"> <button>&LessLess; Back</button></a>
+    <a href="index.html"> <button>HOME</button></a>
+</section>
+
+<section id="calculator">
+    <div class="container">
+        <h3>Kilometer Calculator</h3>
+
+        <!-- Different Converts Link -->
+        <div class="links">
+            <h4>If the Following Length unit is not enough for you then Click on MORE_BUTTON and Check out The whole page.</h4>
+            <button><a href="https://www.unitconverters.net/length-converter.html" target="_blank">More</a></button>
+        </div>
+
+        <div class="calSec">
+            <p>
+                Length in Km <input type="text" id="len" name="len" placeholder="Enter the len in km"><br><br>
+            </p>
+            
+            <p>
+                <input type="radio" name="km" id="meter" value="m" checked> <b>Meter(m)</b>
+                <input type="radio" name="km" id="yds" value="yds"> <b>Yards(yds)</b>
+                <input type="radio" name="km" id="inch" value="inch"> <b>Inch</b>
+                <input type="radio" name="km" id="miles" value="miles"> <b>Miles</b>
+                <input type="radio" name="km" id="mm" value="mm"> <b>Milimeter(mm)</b>
+                <input type="radio" name="km" id="cm" value="cm"> <b>Centimeter(cm)</b>
+                <input type="radio" name="km" id="feet" value="feet"> <b>feet(foot)</b>
+            </p>
+            
+            <input type="radio" name="km" id="all" value="allcount" unchecked><b>All</b>
+            <br><br>
+            <button type="submit" onclick="km()">Calc</button>
+        </div>
+
+        <div class="calOutput">
+            <h3 id="output">Result is</h3>
+            <br>
+            <h3 id="allresult"></h3>
+            <ul type="none" class="calOutput">
+                <h4><li id="result"></li></h4>
+                <h4><li id="result1"></li></h4>
+                <h4><li id="result2"></li></h4>
+                <h4><li id="result3"></li></h4>
+                <h4><li id="result4"></li></h4>
+                <h4><li id="result5"></li></h4>
+                <h4><li id="result6"></li></h4>
+            </ul>
+        </div>        
+    </div>
+</section>
+
+<secction id="footer">
+    <div id="contactinfo">
+        <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
+        <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+    </div>
+    <div class="" id="copyright">
+        <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
+    </div>
+</secction>
+</body>
+</html>
