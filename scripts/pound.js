@@ -7,6 +7,10 @@ function pound(){
     var poundTomiligm = (wt * 453592.37);
     var poundToounce = (wt * 16);
 
+    //Clearing Input Box 
+    var input = document.getElementById('weight');
+    input.value = " ";
+
     if (document.getElementById("kg").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(poundTokg)+" Kg";
     }

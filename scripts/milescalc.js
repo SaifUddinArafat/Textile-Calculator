@@ -9,6 +9,10 @@ function miles(){
     var milesTocm = (len *  160934.4);
     var milesTomm = (len * 1609344);
 
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
+
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(milesTometer) + " meter";
     }

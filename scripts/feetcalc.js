@@ -9,6 +9,10 @@ function feet(){
     var feetTocm = (len *  30.48);
     var feetTomm = (len * 304.8);
 
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
+
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(feetTometer) + " meter";
     }

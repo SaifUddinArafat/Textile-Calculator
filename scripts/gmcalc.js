@@ -7,6 +7,10 @@ function gm(){
     var gmTomiligm = (wt * 1000);
     var gmToounce = (wt * 0.0352739619);
 
+    //Clearing Input Box 
+    var input = document.getElementById('weight');
+    input.value = " ";
+
     if (document.getElementById("pound").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(gmTopound)+" lb";
     }

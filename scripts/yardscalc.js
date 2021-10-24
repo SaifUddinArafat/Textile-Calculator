@@ -1,5 +1,7 @@
 function yards(){
+    
     var len = Number(document.getElementById("len").value);
+    
 
     var yardsTometer = (len * 0.9144);
     var yardsToinch = (len * 36);
@@ -8,6 +10,11 @@ function yards(){
     var yardsTokm = (len * 0.0009144);
     var yardsTocm = (len *  91.44);
     var yardsTomm = (len * 914.4);
+    
+    //Clearing Up the default value
+    var input = document.getElementById("len");
+    input.value = " ";
+
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(yardsTometer) + " meter";

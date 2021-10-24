@@ -9,6 +9,10 @@ function mm(){
     var mmTomiles = (len * 0.6213711922) * 0.000001; //(Km to miles) * (mm to km)
     var mmTocm = (len *  100000) * 0.000001; //(Km to cm) * (mm to km)
 
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
+
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(mmTometer) + " meter";
     }

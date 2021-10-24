@@ -15,7 +15,9 @@ function cm(){
  
     var cmTomm = (len * 1000000) * 0.00001;//(Km to cm) * (cm to km)
 
-   
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(cmTometer) + " meter";

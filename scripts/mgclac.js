@@ -7,6 +7,10 @@ function mg(){
     var mgTogram = (wt * 0.001);
     var mgToounce = (wt * 0.000035274);
 
+    //Clearing Input Box 
+    var input = document.getElementById('weight');
+    input.value = " ";
+
     if (document.getElementById("pound").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(mgTopound)+" lb";
     }

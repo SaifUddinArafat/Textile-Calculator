@@ -7,6 +7,10 @@ function oz(){
     var ozTogram = (wt * 28349.523125);
     var ozTomg = (wt * 28.349523125);
 
+    //Clearing Input Box 
+    var input = document.getElementById('weight');
+    input.value = " ";
+
     if (document.getElementById("pound").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(ozTopound)+" lb";
     }

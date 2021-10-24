@@ -6,6 +6,14 @@ function gsm(){
     var gsm1 = (swt * 100);
     var gsm2 = (swt) / (slen * swd);
 
+    //Clearing Input Box 
+    var input1 = document.getElementById('length');
+    input1.value = " "; 
+    var input2 = document.getElementById('weight');
+    input2.value = " "; 
+    var input3 = document.getElementById('width');
+    input3.value = " ";
+
     if(document.getElementById("gsm1").checked){
         document.getElementById("output").innerHTML = "The GSM is : "+ String(gsm1) +" GSM";
         document.getElementById("check").innerHTML = "Your provided width is: "+String(swt)+

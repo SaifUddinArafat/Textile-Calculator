@@ -7,6 +7,10 @@ function grain(){
     var grainTomiligm = (wt * 64.79891);
     var grainToounce = (wt * 0.0022857143);
 
+    //Clearing Input Box 
+    var input = document.getElementById('weight');
+    input.value = " ";
+
     if (document.getElementById("kg").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(grainTokg)+" Kg";
     }

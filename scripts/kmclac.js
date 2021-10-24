@@ -8,6 +8,10 @@ function km(){
     var kmTomiles = (len * 0.6213711922);
     var kmTocm = (len *  100000);
     var kmTomm = (len * 1000000);
+    
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(kmTometer) + " meter";

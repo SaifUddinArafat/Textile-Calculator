@@ -9,6 +9,10 @@ function inch(){
     var inchTocm = (len *  2.54);
     var inchTomm = (len * 25.4);
 
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
+
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(inchTometer) + " meter";
     }

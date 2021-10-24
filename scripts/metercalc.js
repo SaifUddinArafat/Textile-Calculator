@@ -8,6 +8,9 @@ function meter(){
     var meterTokm = (len * 0.001);
     var meterTocm = (len *  100);
     var meterTomm = (len * 1000);
+    //Clearing Input Box 
+    var input = document.getElementById('len');
+    input.value = " ";
 
     if (document.getElementById("yds").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(meterToyds) + " yds";

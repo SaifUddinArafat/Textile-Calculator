@@ -13,6 +13,13 @@ function output(){
     var miliTex = (sampleWt / sampleLen) * (1000);
     var jute = (sampleWt / sampleLen) * (14400);
 
+    //Clearing the input Box
+    var input1 = document.getElementById("sampleLen");
+    input1.value = " ";
+    var input2 = document.getElementById("sampleWt");
+    input2.value = " ";
+
+
     if (document.getElementById("ecount").checked){
         document.getElementById("output").innerHTML = "English Count is : "+String(ne)+" Ne";
         document.getElementById("alert").innerHTML = "If Length is :"+String(sampleLen)+" yds"+" Weight is : "+String(sampleWt)+" Pound";
@@ -71,8 +78,3 @@ function output(){
     }
 
 }
-
-// function countTable(){
-//     var ctable = document.getElemetById("countTable");
-//     alert(ctable);
-// }

@@ -6,8 +6,6 @@
     <title>GSM Calculator</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/countcalc.css">
-    <link rel="stylesheet" href="scripts/script.js">
-    <script src="scripts/gmcalc.js"></script>
 </head>
 <body>
 <section id="header">
@@ -28,16 +26,6 @@
         <div class="links">
             <a href="weightcalc.html"><button>Weight Converter(Grain,<br>Pound,Kg,Gm etc)</button></a>
             <a href="lengthcalc.html"><button>Length Converter(Yard,Meter,<br>Inch,Feet etc)</button></a>
-            <!-- <a href="grain-to-all.html"> <button>Grain to Gram</button> </a>
-            <a href="grain-to-all.html"><button>Grain to Pound</button></a>
-            <a href="grain-to-all.html"><button>Grain to kg</button></a>
-            <a href="meter-to-all.html"><button>Meter to Yards</button></a>
-            <a href="yds-to-all.html"><button>Yards to Meter</button></a>
-            <a href="pount-to-all.html"><button>Pound to kg</button></a>
-            <a href="pount-to-all.html"><button>Pound to Gram</button></a>
-            <a href="pount-to-all.html"><button>Pound to Grain</button></a>
-            <a href="pount-to-all.html"><button>Gram to Kg</button></a>
-            <a href="pount-to-all.html"><button>Kg to Gram</button></a> -->
         </div>
 
         <div class="notice">
@@ -50,7 +38,7 @@
         </div>
 
         <div class="calSec">
-            <p>
+            <p class="inputSec">
                 Sample weight <input type="text" id="weight" name="weight" placeholder="Weight in Grams"><br><br>
                 Sample Length <input type="text" id="length" name="length" placeholder="Enter sample length"><br><br>
                 Sample width <input type="text" id="width" name="width" placeholder="Enter sample width">
@@ -100,14 +88,27 @@
         </p>
     </div>
 </section>
-<secction id="footer">
-    <div id="contactinfo">
-        <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
-        <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+
+    <!-- Footer Section -->
+<section>
+    <div class="footer">
+        <div class="links">
+            <h4>If the Following Weight unit is not enough for you then Click on MORE_BUTTON and Check out The whole page.</h4> <br>
+            <button><a href="https://www.unitconverters.net/weight-and-mass/grain-to-ton-long.htm" target="_blank">More</a></button>
+        </div>
+        <div id="contactinfo">
+            <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
+            <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+        </div>
+        
+        <div class="" id="copyright">
+            <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
+        </div>
     </div>
-    <div class="" id="copyright">
-        <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
-    </div>
-</secction>
+</section>
+
+<!-- Adding javascript -->
+<script src="scripts/gmcalc.js"></script>
+
 </body>
 </html>

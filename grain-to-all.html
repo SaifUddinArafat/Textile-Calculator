@@ -6,8 +6,6 @@
     <title>Grain Calculator</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/countcalc.css">
-    <link rel="stylesheet" href="scripts/script.js">
-    <script src="scripts/grain.js"></script>
     <style>
         .links button a{
             color: white;
@@ -33,14 +31,8 @@
     <div class="container">
         <h3>Grain Calculator</h3>
 
-        <!-- Different Converts Link -->
-        <div class="links">
-            <h4>If the Following Weight unit is not enough for you then Click on MORE_BUTTON and Check out The whole page.</h4>
-            <button><a href="https://www.unitconverters.net/weight-and-mass/grain-to-ton-long.htm" target="_blank">More</a></button>
-        </div>
-
         <div class="calSec">
-            <p>
+            <p  class="inputSec">
                 Weight in Grain <input type="text" id="weight" name="weight" placeholder="Enter the Weight in grain"><br><br>
             </p>
             
@@ -72,14 +64,28 @@
     </div>
 </section>
 
-<secction id="footer">
-    <div id="contactinfo">
-        <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
-        <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+
+    <!-- Footer Section -->
+<section>
+    <div class="footer">
+        <div class="links">
+            <h4>If the Following Weight unit is not enough for you then Click on MORE_BUTTON and Check out The whole page.</h4> <br>
+            <button><a href="https://www.unitconverters.net/weight-and-mass/grain-to-ton-long.htm" target="_blank">More</a></button>
+        </div>
+        <div id="contactinfo">
+            <a href="https://saifuddinarafat.blogspot.com/" id="about" target="_blank"> <button>ABOUT ME</button> </a>
+            <a href="https://www.facebook.com/saifuddin.arafat/" id="contact" target="_blank"> <button>CONTACT ME</button></a>
+        </div>
+        
+        <div class="" id="copyright">
+            <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
+        </div>
     </div>
-    <div class="" id="copyright">
-        <a href="https://saifuddinarafat.blogspot.com/" target="_blank">This Site is Copyright By &copy; <spun id="myname">Saif Uddin</spun></a>
-    </div>
-</secction>
+</section>
+
+
+<!-- Adding javascript -->
+<script src="scripts/grain.js"></script>
+
 </body>
 </html>

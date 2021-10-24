@@ -1,24 +1,20 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1, h2, h3, h4, h5, h6{
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
 body{
-    width: 97%;
-    background-color: coral;
+    background-image: linear-gradient(60deg, rgba(255, 208, 0, 0.993), rgb(212, 14, 14), rgba(254, 108, 0, 0.993), rgb(177, 9, 9));
 }
 #header{
-    width: 100%;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    margin-left: -10px;
-    padding-right: 15px;/*15px for Mobile 45px for pc */
-    background-color: black;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0.904);
 }
 
 #header marquee{
+    margin-left: 3%;
     color: brown;
     background-color: cornsilk;
 }
@@ -32,46 +28,97 @@ body{
     font-size: 35px;
 }
 
-#pagination button{
-    margin-left: 18%;
-    margin-right: 10%;
+#pagination{
+    margin-left: 9%;
+    margin-top: 20px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 80%;
+    height: 55px;
     color: rgb(173, 150, 196);
-    font-weight: bold;
-    font-size: 20px;
-    padding: 5px;
-    width: 90px;
-    height: 50px;
-    margin-top: 15px;
     background-color: rgba(1, 12, 43, 0.801);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pagination button{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#options{
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 #options button{
-    /* text-transform: uppercase; */
-    width: 80%;
-    margin-left: 8%;
+    float: left;
+    width: 30%;
+    margin-left: 2.75%;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: 80px;
+    height: 120px;
     font-weight: bold;
-    font-size: 25px;
-    background-color: darkblue;
-    color: white;
+    font-size: 20px;
+    background-image: linear-gradient(60deg, rgb(12, 235, 187), rgb(27, 162, 216), rgb(10, 109, 112));
+    color: rgb(14, 12, 12);
+    border: 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#options button:hover{
+    background-image: linear-gradient(60deg, rgb(3, 199, 52), rgb(65, 216, 27), rgba(7, 104, 15, 0.829));
+    
+    transition: all 0.5s ease;
 }
 
+.footer{
+    padding-top: 10px;
+    color: white;
+    margin-top: 500px;
+    min-height: 100px;
+    background-color: black;
+}
 
+.footer .links{
+    margin-left: 20px;
+}
+
+.footer .links button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer .links button a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 #contactinfo{
-    margin-bottom: -10px;
-    margin-left: -10px;
-    padding-right: 15px; /*15px for Mobile 45px for pc */
+    padding-right: 15px; 
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* padding: 20px; */
-    background-color: rgb(196, 32, 4);
+    padding: 20px;
+    background-image: linear-gradient(60deg, rgba(255, 255, 0, 0.199), rgba(220, 20, 60, 0.39), rgba(255, 0, 0, 0.137));
     color: rgb(245, 244, 244);
 }
+
 #contactinfo button{
     width: 150px;
     height: 45px;
@@ -81,43 +128,34 @@ body{
     font-size: 18px;
     color: rgb(32, 17, 17);
     background-color: cyan;
-}
-#footer .links button{
-    width: 150px;
-    height: 50px;
-    padding: 10px;
-    margin: 2px;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
+    cursor: pointer;
 }
 
-#footer .links button a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-#footer #copyright{
+.footer #copyright{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: cornsilk;
-    background-color: black;
+    background-color: rgba(202, 162, 162, 0.089);
     padding: 10px;
-    margin-bottom: -8px;
 }
 
-#footer #copyright a {
+.footer #copyright a {
     text-decoration: none;
     color: blanchedalmond;
 }
 
-#footer #copyright #myname{
+.footer #copyright #myname{
     color: chartreuse;
     font-weight: bold;
     font-size: 20px;
+}
+
+@media screen and (max-width: 780px) {
+    #options button{
+        margin-left: 55px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+    }
 }
