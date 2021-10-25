@@ -1,6 +1,4 @@
-#claculator{
-   
-}
+
 #calculator h3{
     background-image: linear-gradient(120deg, blue, green, yellow, red, pink);
     padding: 10px 0px;
@@ -20,26 +18,17 @@
     text-align: center;
 }
 
-#calculator .links{
-    margin: 10px;
-}
-
-#calculator .links button{
-    float: left;
-    width: 45%;
-    margin: 2%;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px;
-    background-image: linear-gradient(60deg, rgb(12, 235, 187), rgb(27, 162, 216), rgb(10, 109, 112));
-    color: rgb(14, 12, 12);
-    cursor: pointer;
-}
-
+/* #################### Input Section Style ################ */
 #calculator .calSec{
+    width: 70%;
+    margin-left: 15%;
+    min-height: 450px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255);
     font-weight: bold;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    border-radius: 40px;
 }
 
 #calculator .calSec input{
@@ -49,19 +38,37 @@
 
 #calculator .calSec .inputSec input{
     width: 350px;
-    margin: 5px;
+    margin: 10px;
+    box-shadow: 0px 1px 1px 1px rgba(15, 14, 14, 0.932);
 }
 
 #calculator .calSec button{
     cursor: pointer;
-    width: 25%;
+    width: 120px;
     height: 35px;
     font-size: 20px;
     font-weight: bold;
     color: rgb(54, 25, 82);
     background-image: linear-gradient(120deg, yellow, red);
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px 2px rgb(19, 18, 18);
+}
+#calculator .calSec button:hover{
+    background-image: linear-gradient(120deg, red, yellow);
 }
 
+/* #################### Output Section Style ################ */
+.calOutput{
+    /* display: none; */
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255);
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+}
 #claculator .calOutput{
     color: black;
     margin-top: 20px;
@@ -89,15 +96,38 @@
     color: rgb(236, 225, 225);
     background-color: rgb(66, 59, 18);
 }
+
+/* #################### Link Button Style ################ */
+#calculator .links{
+    margin: 10px;
+}
+
+#calculator .links button{
+    float: left;
+    width: 45%;
+    margin: 2%;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    background-image: linear-gradient(60deg, rgb(7, 99, 79), rgb(197, 216, 27));
+    border-radius: 20px;
+    color: rgba(255, 254, 254, 0.904);
+    cursor: pointer;
+
+}
+
+
+/* #################### Information Text Style ################ */
+#info{
+    margin: 50px;
+}
 #indirect_system{
     margin-top: 10px;
-    overflow: none;
     text-align: center;
 }
 
 #direct_system{
     margin-top: 10px;
-    overflow: none;
     text-align: center;
 }
 
@@ -107,7 +137,13 @@ table{
     width: 98%;
 }
 
+
+/* #################### Responsive Css ################ */
 @media screen and (max-width: 780px) {
+    #calculator .calSec{
+        width: 96%;
+        margin-left: 2%;
+    }
     #calculator .links button{
         text-align: left;
         width: 45%;

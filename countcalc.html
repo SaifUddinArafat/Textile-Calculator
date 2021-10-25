@@ -18,46 +18,43 @@
     <a href="index.html"> <button>HOME</button></a>
 </section>
 
-<section id="calculator">
-    <div class="container">
+<section>
+    <div class="container"  id="calculator">
         <h3>Count Calculator</h3>
 
         <p class="warningText">
             Put the value according to the <a href="#countTable">Count-Table</a>. Like if you want to claculate English count then
             length have to be in Yard and Weight have to be in Pound(lb). Unless the result could be wrong.
         </p>
-        
-        <!-- Different Converts Link -->
-        <div class="links">
-            <a href="weightcalc.html"><button>Weight Converter(Grain,<br>Pound,Kg,Gm etc)</button></a>
-            <a href="lengthcalc.html"><button>Length Converter(Yard,Meter,<br>Inch,Feet etc)</button></a>
-        </div>
 
-        <!-- Input Section -->
+
+        <!-- Calculation Section -->
         <div class="calSec">
-            <p class="inputSec">
-                Sample length <input type="text" id="sampleLen" name="sampleLen" placeholder="Enter length"><br><br>
-                Sample Weight <input type="text" id="sampleWt" name="sampleWt" placeholder="Enter Weight">
-            </p>
-            
-            <p>
-                Indirect System
-                <input type="radio" name="count" id="ecount" value="ecount" checked><b>Ne</b>
-                <input type="radio" name="count" id="mcount" value="mcount"><b>Nm</b>
-                <input type="radio" name="count" id="worcount" value="worcount"><b>Worsted</b>
-                <input type="radio" name="count" id="wolcount" value="wolcount"><b>Woolen</b>
+            <div class="calcInput">
+                <p class="inputSec">
+                    Sample length <input type="text" id="sampleLen" name="sampleLen" placeholder="Enter length"><br><br>
+                    Sample Weight <input type="text" id="sampleWt" name="sampleWt" placeholder="Enter Weight">
+                </p>
+                
+                <p>
+                    Indirect System
+                    <input type="radio" name="count" id="ecount" value="ecount" checked><b>Ne</b>
+                    <input type="radio" name="count" id="mcount" value="mcount"><b>Nm</b>
+                    <input type="radio" name="count" id="worcount" value="worcount"><b>Worsted</b>
+                    <input type="radio" name="count" id="wolcount" value="wolcount"><b>Woolen</b>
+                    <br><br>
+                    Direct System
+                    <input type="radio" name="count" id="tcount" value="tcount"><b>Tex</b>
+                    <input type="radio" name="count" id="dcount" value="dcount"><b>Denier</b>
+                    <input type="radio" name="count" id="decicount" value="decicount"><b>DeciTex</b>
+                    <input type="radio" name="count" id="milicount" value="milicount"><b>MiliTex</b>
+                    <input type="radio" name="count" id="jcount" value="jutecount"><b>JuteCount</b>
+                </p>
+                
+                <input type="radio" name="count" id="allcount" value="allcount" unchecked><b>All</b>
                 <br><br>
-                Direct System
-                <input type="radio" name="count" id="tcount" value="tcount"><b>Tex</b>
-                <input type="radio" name="count" id="dcount" value="dcount"><b>Denier</b>
-                <input type="radio" name="count" id="decicount" value="decicount"><b>DeciTex</b>
-                <input type="radio" name="count" id="milicount" value="milicount"><b>MiliTex</b>
-                <input type="radio" name="count" id="jcount" value="jutecount"><b>JuteCount</b>
-            </p>
-            
-            <input type="radio" name="count" id="allcount" value="allcount" unchecked><b>All</b>
-            <br><br>
-            <button type="submit" onclick="output()">Count</button>
+                <button type="submit" onclick="output()">Count</button>
+            </div>
         </div>
 
         <div class="calOutput">
@@ -77,17 +74,21 @@
                 <h4><li id="result8"></li></h4>
             </ul>
         </div>
-
-        
+        <!-- Different Converts Link -->
+        <div class="links">
+            <a href="weightcalc.html"><button>Weight Converter(Grain,<br>Pound,Kg,Gm etc)</button></a>
+            <a href="lengthcalc.html"><button>Length Converter(Yard,Meter,<br>Inch,Feet etc)</button></a>
+        </div>
     </div>
 </section>
 
-<section class="info" id="countTable">
+<section id="countTable">
     <div class="container">
+        
         
         <!-- Information about direct and indirect system -->
         <div id="info">    
-            <ul type="star" style="font-weight: bold;">
+            <ul style="font-weight: bold;">
                 <li> In case of indirect counnt the weight is always fixed. So the count is mass per unit length</li>
                 <li>Higher the count finner the yarn is.</li>
                 <li> In case of direct counnt the length is always fixed. So the count is mass per unit length.</li>

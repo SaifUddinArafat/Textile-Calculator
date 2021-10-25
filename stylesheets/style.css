@@ -6,8 +6,15 @@
 }
 
 body{
-    background-image: linear-gradient(60deg, rgba(255, 208, 0, 0.993), rgb(212, 14, 14), rgba(254, 108, 0, 0.993), rgb(177, 9, 9));
+    /* background-image: linear-gradient(90deg, rgba(55, 0, 255, 0.993),  rgba(10, 134, 236, 0.76)); */
+    background-image: linear-gradient(120deg, rgba(65, 138, 98, 0.658), rgb(12, 119, 79, 0.658), rgb(5, 119, 79, 0.658));
+
 }
+
+button{
+    border: 0;
+}
+
 #header{
     padding-right: 15px;
     background-color: rgba(0, 0, 0, 0.904);
@@ -60,9 +67,9 @@ body{
 #options button{
     float: left;
     width: 30%;
-    margin-left: 2.75%;
+    margin-left: 3%;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     height: 120px;
     font-weight: bold;
     font-size: 20px;
@@ -72,10 +79,12 @@ body{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.5s ease;
+
+    box-shadow: 1px 3px 4px 6px white;
 }
 #options button:hover{
     background-image: linear-gradient(60deg, rgb(3, 199, 52), rgb(65, 216, 27), rgba(7, 104, 15, 0.829));
-    
+    box-shadow: 1px 3px 4px 6px rgba(14, 10, 10, 0.658);
     transition: all 0.5s ease;
 }
 
@@ -126,9 +135,17 @@ body{
     margin: 20px;
     font-weight: bold;
     font-size: 18px;
-    color: rgb(32, 17, 17);
-    background-color: cyan;
+    color: rgb(219, 213, 213);
+    background-color: rgba(7, 43, 43, 0.74);
+    border-radius: 2px;
+    border: 0;
     cursor: pointer;
+}
+
+#contactinfo button:hover{
+    background-color: blanchedalmond;
+    color: rgb(0, 0, 204);
+    border: 2px solid rgb(1, 1, 221);
 }
 
 .footer #copyright{
