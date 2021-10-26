@@ -6,9 +6,10 @@
 }
 
 body{
+    /* background-image: linear-gradient(45deg, #ffff6b, #ff5d5d, #16cf16, #6262ff, #ff8ae6, #ee113d); */
     /* background-image: linear-gradient(90deg, rgba(55, 0, 255, 0.993),  rgba(10, 134, 236, 0.76)); */
-    background-image: linear-gradient(120deg, rgba(65, 138, 98, 0.658), rgb(12, 119, 79, 0.658), rgb(5, 119, 79, 0.658));
-
+    /* background-image: linear-gradient(120deg, rgba(65, 138, 98, 0.658), rgb(12, 119, 79, 0.658), rgb(5, 119, 79, 0.658)); */
+    background-image: linear-gradient(145deg, #0cebbb, #1ba2d8, #0a6d70, rgba(7, 57, 77, 0.788));
 }
 
 button{
@@ -22,7 +23,7 @@ button{
 
 #header marquee{
     margin-left: 3%;
-    color: brown;
+    color: #ad2727;
     background-color: cornsilk;
 }
 #header h1{
@@ -45,8 +46,8 @@ button{
     padding-bottom: 15px;
     width: 80%;
     height: 55px;
-    color: rgb(173, 150, 196);
-    background-color: rgba(1, 12, 43, 0.801);
+    color: #ad96c4;
+    background-color: #010c2bcc;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -60,8 +61,8 @@ button{
 }
 
 #pagination button:hover{
-    background-color: rgb(64, 64, 241);
-    color: white;
+    background-color: #4040f1;
+    color: #ffffff;
 }
 
 #options{
@@ -70,6 +71,7 @@ button{
 }
 
 #options button{
+    background-color: #fff8dc;
     float: left;
     width: 30%;
     margin-left: 3%;
@@ -78,18 +80,22 @@ button{
     height: 120px;
     font-weight: bold;
     font-size: 20px;
-    background-image: linear-gradient(60deg, rgb(12, 235, 187), rgb(27, 162, 216), rgb(10, 109, 112));
-    color: rgb(15, 6, 6);
-    border: 0px;
+    /* background-image: linear-gradient(125deg, #008000, #ffff00, #ff0000, #f0405d); */
+    /* background-image: linear-gradient(60deg, #0cebbb, #1ba2d8, #0a6d70); */
+    color: rgba(24, 56, 3, 0.979);
+    border: 5px;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.5s ease;
-    box-shadow: 3px 3px 4px 5px rgba(34, 31, 31, 0.658); 
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 4px 5px #221f1fa8; 
 }
 #options button:hover{
-    background-image: linear-gradient(60deg, rgb(3, 199, 52), rgb(65, 216, 27), rgba(7, 104, 15, 0.829));
-    box-shadow: 1px 3px 4px 6px rgb(243, 243, 243);
-    transition: all 0.5s ease;
+    background-color: #050505;
+    color: rgba(248, 248, 248, 0.911);
+    /* background-image: linear-gradient(125deg, #f83d5c, #ff0000, #ffff00, #008000); */
+    /* background-image: linear-gradient(60deg, #03c734, #41d81b, #07680fd3); */
+    box-shadow: 1px 3px 4px 6px #f3f3f3;
+    transition: all 0.3s ease;
 }
 
 .footer{
@@ -97,7 +103,7 @@ button{
     color: white;
     /* margin-top: 500px; */
     min-height: 100px;
-    background-color: black;
+    background-color: #000000;
 }
 
 .footer .links{
@@ -108,14 +114,14 @@ button{
 .footer .links button{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: blue;
-    color: white;
+    background-color: #0000ff;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
 }
 
 .footer .links button a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -129,8 +135,8 @@ button{
     padding-top: 10px;
     padding-bottom: 10px;
     padding: 20px;
-    background-image: linear-gradient(60deg, rgba(255, 255, 0, 0.199), rgba(220, 20, 60, 0.39), rgba(255, 0, 0, 0.137));
-    color: rgb(245, 244, 244);
+    background-image: linear-gradient(60deg, #ffff0033, #dc143c63, #ff000023);
+    color: #f5f4f4;
 }
 
 #contactinfo button{
@@ -140,17 +146,17 @@ button{
     margin: 20px;
     font-weight: bold;
     font-size: 18px;
-    color: rgb(219, 213, 213);
-    background-color: rgba(7, 43, 43, 0.74);
+    color: #dbd5d5;
+    background-color: #072b2bbd;
     border-radius: 2px;
     border: 0;
     cursor: pointer;
 }
 
 #contactinfo button:hover{
-    background-color: blanchedalmond;
-    color: rgb(0, 0, 204);
-    border: 2px solid rgb(1, 1, 221);
+    background-color: #ffebcd;
+    color: #0000cc;
+    border: 2px solid #0101dd;
 }
 
 .footer #copyright{
@@ -158,18 +164,18 @@ button{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: cornsilk;
-    background-color: rgba(202, 162, 162, 0.089);
+    color: #fff8dc;
+    background-color: #caa2a217;
     padding: 10px;
 }
 
 .footer #copyright a {
     text-decoration: none;
-    color: blanchedalmond;
+    color: #ffebcd;
 }
 
 .footer #copyright #myname{
-    color: chartreuse;
+    color: #7fff00;
     font-weight: bold;
     font-size: 20px;
 }

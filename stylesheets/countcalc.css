@@ -1,13 +1,19 @@
 
 #calculator .title{
     font-style: italic;
-    background-image: linear-gradient(120deg, blue, green, yellow, red, pink);
+    background-image: linear-gradient(120deg, #0000ff, #008000, #ffff00, #ff0000, #ffc0cb);
     padding: 10px 0px;
     margin-top: 10px;
-    color: rgb(0, 0, 0);
+    color: #1f1111;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+#calculator .title:hover{
+    background-image: linear-gradient(120deg, #ffc0cb,#ff0000, #ffff00, #008000, #0000ff);
 }
 
 #calculator .warningText{
@@ -25,7 +31,7 @@
     margin-left: 15%;
     min-height: 450px;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255);
+    background-color: #ffffff;
     font-weight: bold;
     padding: 20px;
     text-align: center;
@@ -40,7 +46,7 @@
 #calculator .calSec .inputSec input{
     width: 350px;
     margin: 10px;
-    box-shadow: 0px 1px 1px 1px rgba(15, 14, 14, 0.932);
+    box-shadow: 0px 1px 1px 1px #0f0e0eee;
 }
 
 #calculator .calSec button{
@@ -51,24 +57,24 @@
     font-size: 20px;
     font-weight: bold;
     color: rgb(43, 8, 8);
-    background-image: linear-gradient(120deg, yellow, red);
+    background-image: linear-gradient(120deg, #ffff00, #ff0000);
     border-radius: 15px;
-    box-shadow: 0px 2px 2px 2px rgb(19, 18, 18);
+    box-shadow: 0px 2px 2px 2px #131212;
 }
 #calculator .calSec button:hover{
-    background-image: linear-gradient(120deg, red, yellow);
+    background-image: linear-gradient(120deg, #ff0000, #ffff00);
 }
 
 /* #################### Output Section Style ################ */
 .calOutput{
     display: none;
     margin-top: 20px;
-    background-color: rgba(194, 189, 189, 0.849);
+    background-color: #c2bdbdd8;
     font-weight: bold;
     padding: 15px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 3px rgba(32, 32, 32, 0.836);
+    box-shadow: 2px 2px 2px 3px #202020d5;
 }
 
 #claculator .calOutput{
@@ -82,8 +88,8 @@
 #calculator .calOutput #output{
     font-size: 25px;
     text-align: center;
-    background-color: rgb(49, 44, 13);
-    color: rgb(229, 241, 229);
+    background-color: #312c0d;
+    color: #e5f1e5;
     margin-top: 10px;
     padding: 10px;
     font-style: italic;
@@ -94,13 +100,13 @@
     padding: 10px;
     margin: 10px 0px 5px 0px;
     background-color: rgb(49, 44, 13);
-    color: rgba(255, 255, 255, 0.911);
+    color: #ffffffe8;
     border-radius: 5px;
 }
 
 #calculator .calOutput #check{
     padding: 10px;
-    color: rgb(236, 225, 225);
+    color: #ece1e1;
     background-color: rgb(66, 59, 18);
     border-radius: 5px;
 }
@@ -117,9 +123,9 @@
     font-weight: bold;
     font-size: 18px;
     padding: 10px;
-    background-image: linear-gradient(60deg, rgb(7, 99, 79), rgb(197, 216, 27));
+    background-image: linear-gradient(60deg, #07634f, #c5d81b);
     border-radius: 20px;
-    color: rgba(255, 254, 254, 0.904);
+    color: #fffefee7;
     cursor: pointer;
 
 }
@@ -164,7 +170,7 @@ table{
     #calculator .calSec .inputSec input{
         width: 270px;
         margin: 10px;
-        box-shadow: 0px 1px 1px 1px rgba(15, 14, 14, 0.932);
+        box-shadow: 0px 1px 1px 1px #0f0e0eee;
     }
 
     #calculator .calOutput #output{
