@@ -9,9 +9,7 @@ function inch(){
     var inchTocm = (len *  2.54);
     var inchTomm = (len * 25.4);
 
-    //Clearing Input Box 
-    var input = document.getElementById('len');
-    input.value = " ";
+    
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(inchTometer) + " meter";
@@ -43,4 +41,18 @@ function inch(){
         document.getElementById("result5").innerHTML = "Length in centimeters : " + String(inchTocm) + " cm";
         document.getElementById("result6").innerHTML = "Length in milimeters : " + String(inchTomm) + " mm";
     }
+
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
 }

@@ -59,6 +59,11 @@ button{
     cursor: pointer;
 }
 
+#pagination button:hover{
+    background-color: rgb(64, 64, 241);
+    color: white;
+}
+
 #options{
     margin-top: 20px;
     margin-bottom: 50px;
@@ -74,17 +79,16 @@ button{
     font-weight: bold;
     font-size: 20px;
     background-image: linear-gradient(60deg, rgb(12, 235, 187), rgb(27, 162, 216), rgb(10, 109, 112));
-    color: rgb(14, 12, 12);
+    color: rgb(15, 6, 6);
     border: 0px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.5s ease;
-
-    box-shadow: 1px 3px 4px 6px white;
+    box-shadow: 3px 3px 4px 5px rgba(34, 31, 31, 0.658); 
 }
 #options button:hover{
     background-image: linear-gradient(60deg, rgb(3, 199, 52), rgb(65, 216, 27), rgba(7, 104, 15, 0.829));
-    box-shadow: 1px 3px 4px 6px rgba(14, 10, 10, 0.658);
+    box-shadow: 1px 3px 4px 6px rgb(243, 243, 243);
     transition: all 0.5s ease;
 }
 
@@ -97,6 +101,7 @@ button{
 }
 
 .footer .links{
+    margin-top: 20px;
     margin-left: 20px;
 }
 
@@ -171,7 +176,7 @@ button{
 
 @media screen and (max-width: 780px) {
     #options button{
-        /* margin-left: 55px; */
+        margin-left: 13%;
         margin-bottom: 40px;
         border-radius: 20px;
     }

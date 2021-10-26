@@ -8,9 +8,6 @@ function meter(){
     var meterTokm = (len * 0.001);
     var meterTocm = (len *  100);
     var meterTomm = (len * 1000);
-    //Clearing Input Box 
-    var input = document.getElementById('len');
-    input.value = " ";
 
     if (document.getElementById("yds").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(meterToyds) + " yds";
@@ -42,4 +39,19 @@ function meter(){
         document.getElementById("result5").innerHTML = "Length in centimeter : " + String(meterTocm) + " cm";
         document.getElementById("result6").innerHTML = "Length in milimeter : " + String(meterTomm) + " mm";
     }
+
+    clearDefault();
+
+    show();
+}
+
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('weight');
+    input.value = " ";
 }

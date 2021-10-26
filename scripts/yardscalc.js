@@ -10,10 +10,6 @@ function yards(){
     var yardsTokm = (len * 0.0009144);
     var yardsTocm = (len *  91.44);
     var yardsTomm = (len * 914.4);
-    
-    //Clearing Up the default value
-    var input = document.getElementById("len");
-    input.value = " ";
 
 
     if (document.getElementById("meter").checked){
@@ -46,4 +42,18 @@ function yards(){
         document.getElementById("result5").innerHTML = "Length in centimeters : " + String(yardsTocm) + " cm";
         document.getElementById("result6").innerHTML = "Length in milimeters : " + String(yardsTomm) + " mm";
     }
+
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
 }

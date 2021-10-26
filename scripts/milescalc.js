@@ -9,9 +9,6 @@ function miles(){
     var milesTocm = (len *  160934.4);
     var milesTomm = (len * 1609344);
 
-    //Clearing Input Box 
-    var input = document.getElementById('len');
-    input.value = " ";
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(milesTometer) + " meter";
@@ -43,4 +40,18 @@ function miles(){
         document.getElementById("result5").innerHTML = "Length in centimeters : " + String(milesTocm) + " cm";
         document.getElementById("result6").innerHTML = "Length in milimeters : " + String(milesTomm) + " mm";
     }
+    
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
 }

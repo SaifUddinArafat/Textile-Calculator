@@ -7,9 +7,6 @@ function pound(){
     var poundTomiligm = (wt * 453592.37);
     var poundToounce = (wt * 16);
 
-    //Clearing Input Box 
-    var input = document.getElementById('weight');
-    input.value = " ";
 
     if (document.getElementById("kg").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(poundTokg)+" Kg";
@@ -34,4 +31,19 @@ function pound(){
         document.getElementById("result3").innerHTML = "Weight in Pound is : "+String(poundTograin)+ " grain";
         document.getElementById("result4").innerHTML = "Weight in Pound is : "+String(poundToounce)+ " Oz";
     }
+
+    clearDefault();
+
+    show();
+}
+
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('weight');
+    input.value = " ";
 }

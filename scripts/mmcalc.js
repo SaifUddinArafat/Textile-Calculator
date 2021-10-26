@@ -8,10 +8,7 @@ function mm(){
     var mmTofeet = (len * 3280.839895) * 0.000001; //(Km to feet) * (mm to km)
     var mmTomiles = (len * 0.6213711922) * 0.000001; //(Km to miles) * (mm to km)
     var mmTocm = (len *  100000) * 0.000001; //(Km to cm) * (mm to km)
-
-    //Clearing Input Box 
-    var input = document.getElementById('len');
-    input.value = " ";
+    
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(mmTometer) + " meter";
@@ -43,4 +40,18 @@ function mm(){
         document.getElementById("result5").innerHTML = "Length in centimeters : " + String(mmTocm) + " cm";
         document.getElementById("result6").innerHTML = "Length in kilometers : " + String(mmTokm) + " km";
     }
+
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
 }

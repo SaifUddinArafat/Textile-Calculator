@@ -20,7 +20,7 @@
 
 <section>
     <div class="container"  id="calculator">
-        <h3>Count Calculator</h3>
+        <h3 class="title">Count Calculator</h3>
 
         <p class="warningText">
             Put the value according to the <a href="#countTable">Count-Table</a>. Like if you want to claculate English count then
@@ -53,27 +53,28 @@
                 
                 <input type="radio" name="count" id="allcount" value="allcount" unchecked><b>All</b>
                 <br><br>
-                <button type="submit" onclick="output()">Count</button>
+                <button type="submit" onclick="output()" id="submitBtn">Count</button>
+            </div>
+            
+            <div class="calOutput" id="calOutput">
+                <h3 id="output">Count is</h3>
+                <h4 id="alert">Alert about length, Weight Unit</h4>
+                <h4 id="check">Check Please</h4>
+                
+                <ul type="none">
+                    <h4><li id="result"></li></h4>
+                    <h4><li id="result1"></li></h4>
+                    <h4><li id="result2"></li></h4>
+                    <h4><li id="result3"></li></h4>
+                    <h4><li id="result4"></li></h4>
+                    <h4><li id="result5"></li></h4>
+                    <h4><li id="result6"></li></h4>
+                    <h4><li id="result7"></li></h4>
+                    <h4><li id="result8"></li></h4>
+                </ul>
             </div>
         </div>
 
-        <div class="calOutput">
-            <h3 id="output">Count is</h3>
-            <h4 id="alert">Alert about length, Weight Unit</h4>
-            <h4 id="check">Check Please</h4>
-            
-            <ul type="none" class="calOutput">
-                <h4><li id="result"></li></h4>
-                <h4><li id="result1"></li></h4>
-                <h4><li id="result2"></li></h4>
-                <h4><li id="result3"></li></h4>
-                <h4><li id="result4"></li></h4>
-                <h4><li id="result5"></li></h4>
-                <h4><li id="result6"></li></h4>
-                <h4><li id="result7"></li></h4>
-                <h4><li id="result8"></li></h4>
-            </ul>
-        </div>
         <!-- Different Converts Link -->
         <div class="links">
             <a href="weightcalc.html"><button>Weight Converter(Grain,<br>Pound,Kg,Gm etc)</button></a>

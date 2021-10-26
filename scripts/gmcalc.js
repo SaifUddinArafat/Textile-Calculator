@@ -7,10 +7,6 @@ function gm(){
     var gmTomiligm = (wt * 1000);
     var gmToounce = (wt * 0.0352739619);
 
-    //Clearing Input Box 
-    var input = document.getElementById('weight');
-    input.value = " ";
-
     if (document.getElementById("pound").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(gmTopound)+" lb";
     }
@@ -34,4 +30,18 @@ function gm(){
         document.getElementById("result3").innerHTML = "Weight in grain is : "+String(gmTograin)+ " grain";
         document.getElementById("result4").innerHTML = "Weight in ounce is : "+String(gmToounce)+ " Oz";
     }
+
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('weight');
+    input.value = " ";
 }

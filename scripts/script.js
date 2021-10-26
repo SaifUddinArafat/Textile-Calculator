@@ -13,12 +13,6 @@ function output(){
     var miliTex = (sampleWt / sampleLen) * (1000);
     var jute = (sampleWt / sampleLen) * (14400);
 
-    //Clearing the input Box
-    var input1 = document.getElementById("sampleLen");
-    input1.value = " ";
-    var input2 = document.getElementById("sampleWt");
-    input2.value = " ";
-
 
     if (document.getElementById("ecount").checked){
         document.getElementById("output").innerHTML = "English Count is : "+String(ne)+" Ne";
@@ -76,5 +70,21 @@ function output(){
         document.getElementById("result7").innerHTML = "MiliTex Count: "+String(miliTex)+" MiliTex";
         document.getElementById("result8").innerHTML = "Jute Count: "+String(jute)+" JuteCount";
     }
+      
+    clearDefault();
+    
+    show();
+}
 
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input1 = document.getElementById("sampleLen");
+    input1.value = " ";
+    var input2 = document.getElementById("sampleWt");
+    input2.value = " ";
 }

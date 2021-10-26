@@ -6,13 +6,6 @@ function gsm(){
     var gsm1 = (swt * 100);
     var gsm2 = (swt) / (slen * swd);
 
-    //Clearing Input Box 
-    var input1 = document.getElementById('length');
-    input1.value = " "; 
-    var input2 = document.getElementById('weight');
-    input2.value = " "; 
-    var input3 = document.getElementById('width');
-    input3.value = " ";
 
     if(document.getElementById("gsm1").checked){
         document.getElementById("output").innerHTML = "The GSM is : "+ String(gsm1) +" GSM";
@@ -26,4 +19,22 @@ function gsm(){
         ", your provided width is : "+String(swd)+
         " Warnning!!! You have to put this value after measuring the length, width, and height of your sample";
     }
+
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input1 = document.getElementById('length');
+    input1.value = " "; 
+    var input2 = document.getElementById('weight');
+    input2.value = " "; 
+    var input3 = document.getElementById('width');
+    input3.value = " ";
 }

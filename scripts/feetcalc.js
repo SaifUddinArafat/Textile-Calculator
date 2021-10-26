@@ -9,10 +9,6 @@ function feet(){
     var feetTocm = (len *  30.48);
     var feetTomm = (len * 304.8);
 
-    //Clearing Input Box 
-    var input = document.getElementById('len');
-    input.value = " ";
-
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(feetTometer) + " meter";
     }
@@ -43,4 +39,18 @@ function feet(){
         document.getElementById("result5").innerHTML = "Length in centimeters : " + String(feetTocm) + " cm";
         document.getElementById("result6").innerHTML = "Length in milimeters : " + String(feetTomm) + " mm";
     }
+    
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
 }

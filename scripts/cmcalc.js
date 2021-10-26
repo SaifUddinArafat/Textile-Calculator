@@ -15,9 +15,10 @@ function cm(){
  
     var cmTomm = (len * 1000000) * 0.00001;//(Km to cm) * (cm to km)
 
-    //Clearing Input Box 
-    var input = document.getElementById('len');
-    input.value = " ";
+
+    
+    var outputs = document.getElementsByClassName("calOutput");
+    outputs.style.display = "block";
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(cmTometer) + " meter";
@@ -49,4 +50,17 @@ function cm(){
         document.getElementById("result5").innerHTML = "Length in Kilometers : " + String(cmTokm) + " km";
         document.getElementById("result6").innerHTML = "Length in milimeters : " + String(cmTomm) + " mm";
     }
+
+    clearDefault();
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
 }

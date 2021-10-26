@@ -7,9 +7,6 @@ function mg(){
     var mgTogram = (wt * 0.001);
     var mgToounce = (wt * 0.000035274);
 
-    //Clearing Input Box 
-    var input = document.getElementById('weight');
-    input.value = " ";
 
     if (document.getElementById("pound").checked){
         document.getElementById("output").innerHTML = "Weight is : "+String(mgTopound)+" lb";
@@ -34,4 +31,18 @@ function mg(){
         document.getElementById("result3").innerHTML = "Weight in grain is : "+String(mgTograin)+ " grain";
         document.getElementById("result4").innerHTML = "Weight in ounce is : "+String(mgToounce)+ " Oz";
     }
+
+    clearDefault();
+
+    show();
+}
+
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('weight');
+    input.value = " ";
 }
