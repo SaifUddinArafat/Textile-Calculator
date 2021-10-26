@@ -95,7 +95,7 @@ button{
 .footer{
     padding-top: 10px;
     color: white;
-    margin-top: 500px;
+    /* margin-top: 500px; */
     min-height: 100px;
     background-color: black;
 }
@@ -180,4 +180,5 @@ button{
         margin-bottom: 40px;
         border-radius: 20px;
     }
+
 }

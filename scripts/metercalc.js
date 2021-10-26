@@ -52,6 +52,6 @@ function show(){
 }
 
 function clearDefault(){
-    var input = document.getElementById('weight');
+    var input = document.getElementById('len');
     input.value = " ";
 }
