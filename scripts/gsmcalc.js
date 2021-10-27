@@ -14,7 +14,7 @@ function clearDefault(){
 const keyboardResponse = document.querySelector(".inputSec");
 keyboardResponse.addEventListener("keypress", e =>{
     if(e.keyCode == 13){
-        output();
+        gsm();
     }
 });
 
