@@ -11,10 +11,38 @@ function clearDefault(){
     var input3 = document.getElementById('width');
     input3.value = " ";
 }
-const keyboardResponse = document.querySelector(".inputSec");
-keyboardResponse.addEventListener("keypress", e =>{
+
+const Enter_Key_Response = document.querySelector(".inputSec");
+Enter_Key_Response.addEventListener("keypress", e =>{ 
     if(e.keyCode == 13){
         gsm();
+    }
+});
+
+const length_Data_Type_Check = document.querySelector("#length");
+gsmInput_Data_Type_Check.addEventListener("keypress", e=>{
+    if(e.charCode>59 || e.charCode<47){
+        console.log("Wrong Data Type")
+        document.getElementById("length").ariaPlaceholder = "Wrong Input Type";
+        e.preventDefault();
+    }
+});
+
+const weight_Data_Type_Check = document.querySelector("#weight");
+weight_Data_Type_Check.addEventListener("keypress", e=>{
+    if(e.charCode>59 || e.charCode<47){
+        console.log("Wrong Data Type")
+        document.getElementById("weight").ariaPlaceholder = "Wrong Input Type";
+        e.preventDefault();
+    }
+});
+
+const width_Data_Type_Check = document.querySelector("#width");
+width_Data_Type_Check.addEventListener("keypress", e=>{
+    if(e.charCode>59 || e.charCode<47){
+        console.log("Wrong Data Type")
+        document.getElementById("width").ariaPlaceholder = "Wrong Input Type";
+        e.preventDefault();
     }
 });
 

@@ -14,6 +14,21 @@ keyboardResponse.addEventListener("keypress", e =>{
     }
 });
 
+const weight_Data_Type_Check = document.querySelector("#weight");
+weight_Data_Type_Check.addEventListener("keypress", e=>{
+    if(e.charCode>59 || e.charCode<47){
+        console.log("Wrong Data Type")
+        document.getElementById("weight").ariaPlaceholder = "Wrong Input Type";
+        e.preventDefault();
+    }
+});
+
+var clearOutputSection = document.querySelector(".clearBtn")
+clearOutputSection.addEventListener("click", ()=>{
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "none";
+});
+
 function grain(){
     var wt = Number(document.getElementById("weight").value);
 

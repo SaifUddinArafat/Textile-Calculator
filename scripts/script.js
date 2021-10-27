@@ -10,11 +10,36 @@ function clearDefault(){
     input2.value = " ";
 }
 
-const keyboardResponse = document.querySelector(".inputSec");
-keyboardResponse.addEventListener("keypress", e =>{
+const Enter_Key_Response = document.querySelector(".inputSec");
+Enter_Key_Response.addEventListener("keypress", e =>{ 
     if(e.keyCode == 13){
         output();
     }
+});
+
+const length_Data_Type_Check = document.querySelector("#sampleLen");
+length_Data_Type_Check.addEventListener("keypress", e=>{
+    if(e.charCode>59 || e.charCode<47){
+        console.log("Wrong Data Type")
+        document.getElementById("sampleLen").ariaPlaceholder = "Wrong Input Type";
+        e.preventDefault();
+    }
+});
+
+const weight_Data_Type_Check = document.querySelector("#sampleWt");
+weight_Data_Type_Check.addEventListener("keypress", e=>{
+    if(e.charCode>59 || e.charCode<47){
+        console.log("Wrong Data Type")
+        document.getElementById("sampleWt").ariaPlaceholder = "Wrong Input Type";
+        e.preventDefault();
+    }
+});
+
+
+var clearOutputSection = document.querySelector(".clearBtn")
+clearOutputSection.addEventListener("click", ()=>{
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "none";
 });
 
 function output(){
@@ -94,4 +119,3 @@ function output(){
     
     show();
 }
-
