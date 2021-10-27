@@ -1,3 +1,23 @@
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input1 = document.getElementById('length');
+    input1.value = " "; 
+    var input2 = document.getElementById('weight');
+    input2.value = " "; 
+    var input3 = document.getElementById('width');
+    input3.value = " ";
+}
+const keyboardResponse = document.querySelector(".inputSec");
+keyboardResponse.addEventListener("keypress", e =>{
+    if(e.keyCode == 13){
+        output();
+    }
+});
+
 function gsm(){
     var slen = Number(document.getElementById("length").value); 
     var swt = Number(document.getElementById("weight").value);
@@ -23,18 +43,4 @@ function gsm(){
     clearDefault();
 
     show();
-}
-
-function show(){
-    var outputs = document.querySelector(".calOutput");
-    outputs.style.display = "block";
-}
-
-function clearDefault(){
-    var input1 = document.getElementById('length');
-    input1.value = " "; 
-    var input2 = document.getElementById('weight');
-    input2.value = " "; 
-    var input3 = document.getElementById('width');
-    input3.value = " ";
 }

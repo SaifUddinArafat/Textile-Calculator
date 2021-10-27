@@ -1,3 +1,19 @@
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('weight');
+    input.value = " ";
+}
+const keyboardResponse = document.querySelector(".inputSec");
+keyboardResponse.addEventListener("keypress", e =>{
+    if(e.keyCode == 13){
+        output();
+    }
+});
+
 function grain(){
     var wt = Number(document.getElementById("weight").value);
 
@@ -34,14 +50,4 @@ function grain(){
     clearDefault();
 
     show();
-}
-
-function show(){
-    var outputs = document.querySelector(".calOutput");
-    outputs.style.display = "block";
-}
-
-function clearDefault(){
-    var input = document.getElementById('weight');
-    input.value = " ";
 }

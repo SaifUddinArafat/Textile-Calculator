@@ -1,3 +1,19 @@
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input = document.getElementById('len');
+    input.value = " ";
+}
+const keyboardResponse = document.querySelector(".inputSec");
+keyboardResponse.addEventListener("keypress", e =>{
+    if(e.keyCode == 13){
+        cm();
+    }
+});
+
 function cm(){
     var len = Number(document.getElementById("len").value);
 
@@ -15,10 +31,6 @@ function cm(){
  
     var cmTomm = (len * 1000000) * 0.00001;//(Km to cm) * (cm to km)
 
-
-    
-    var outputs = document.getElementsByClassName("calOutput");
-    outputs.style.display = "block";
 
     if (document.getElementById("meter").checked){
         document.getElementById("output").innerHTML = "Length is : "+String(cmTometer) + " meter";
@@ -53,14 +65,4 @@ function cm(){
 
     clearDefault();
     show();
-}
-
-function show(){
-    var outputs = document.querySelector(".calOutput");
-    outputs.style.display = "block";
-}
-
-function clearDefault(){
-    var input = document.getElementById('len');
-    input.value = " ";
 }

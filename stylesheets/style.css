@@ -9,7 +9,8 @@ body{
     /* background-image: linear-gradient(45deg, #ffff6b, #ff5d5d, #16cf16, #6262ff, #ff8ae6, #ee113d); */
     /* background-image: linear-gradient(90deg, rgba(55, 0, 255, 0.993),  rgba(10, 134, 236, 0.76)); */
     /* background-image: linear-gradient(120deg, rgba(65, 138, 98, 0.658), rgb(12, 119, 79, 0.658), rgb(5, 119, 79, 0.658)); */
-    background-image: linear-gradient(145deg, #0cebbb, #1ba2d8, #0a6d70, rgba(7, 57, 77, 0.788));
+    /* background-image: linear-gradient(145deg, #0cebbb, #1ba2d8, #0a6d70, rgba(7, 57, 77, 0.788)); */
+    background-image: linear-gradient(90deg, #02343dd2, #3c8c92ce, #169ea3c7, #02343de5);
 }
 
 button{
@@ -18,17 +19,17 @@ button{
 
 #header{
     padding-right: 15px;
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: #000000e7;
 }
 
 #header marquee{
     margin-left: 3%;
     color: #ad2727;
-    background-color: cornsilk;
+    background-color: #fff8dc;
 }
 #header h1{
     text-align: center;
-    color: whitesmoke;
+    color: #f5f5f5;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: -10px;
@@ -71,7 +72,6 @@ button{
 }
 
 #options button{
-    background-color: #fff8dc;
     float: left;
     width: 30%;
     margin-left: 3%;
@@ -80,22 +80,24 @@ button{
     height: 120px;
     font-weight: bold;
     font-size: 20px;
+    /* background-color: #fcfbf7; */
     /* background-image: linear-gradient(125deg, #008000, #ffff00, #ff0000, #f0405d); */
     /* background-image: linear-gradient(60deg, #0cebbb, #1ba2d8, #0a6d70); */
-    color: rgba(24, 56, 3, 0.979);
+    background-image: linear-gradient(60deg, #03c734, #41d81b, #07680fd3);
+    color: rgba(8, 19, 1, 0.979);
     border: 5px;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     box-shadow: 3px 3px 4px 5px #221f1fa8; 
 }
 #options button:hover{
-    background-color: #050505;
+    background-image: linear-gradient(60deg, #161515, #3f3b3b, #020202);
     color: rgba(248, 248, 248, 0.911);
     /* background-image: linear-gradient(125deg, #f83d5c, #ff0000, #ffff00, #008000); */
     /* background-image: linear-gradient(60deg, #03c734, #41d81b, #07680fd3); */
     box-shadow: 1px 3px 4px 6px #f3f3f3;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .footer{

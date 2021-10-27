@@ -1,3 +1,21 @@
+function show(){
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "block";
+}
+
+function clearDefault(){
+    var input1 = document.getElementById("sampleLen");
+    input1.value = " ";
+    var input2 = document.getElementById("sampleWt");
+    input2.value = " ";
+}
+const keyboardResponse = document.querySelector(".inputSec");
+keyboardResponse.addEventListener("keypress", e =>{
+    if(e.keyCode == 13){
+        output();
+    }
+});
+
 function output(){
     var sampleLen = Number(document.getElementById("sampleLen").value);
     var sampleWt = Number(document.getElementById("sampleWt").value);
@@ -73,16 +91,4 @@ function output(){
 
     show();
     clearDefault();
-}
-
-function show(){
-    var outputs = document.querySelector(".calOutput");
-    outputs.style.display = "block";
-}
-
-function clearDefault(){
-    var input1 = document.getElementById("sampleLen");
-    input1.value = " ";
-    var input2 = document.getElementById("sampleWt");
-    input2.value = " ";
 }
