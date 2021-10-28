@@ -29,6 +29,12 @@ clearOutputSection.addEventListener("click", ()=>{
     outputs.style.display = "none";
 });
 
+var clearOutputSection = document.querySelector(".clearBtn")
+clearOutputSection.addEventListener("click", ()=>{
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "none";
+});
+
 function gm(){
     var wt = Number(document.getElementById("weight").value);
 

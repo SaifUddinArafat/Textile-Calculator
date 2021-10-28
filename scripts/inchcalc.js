@@ -7,6 +7,7 @@ function clearDefault(){
     var input = document.getElementById('len');
     input.value = " ";
 }
+
 const Enter_Key_Response= document.querySelector(".inputSec");
 Enter_Key_Response.addEventListener("keypress", e =>{
     if(e.keyCode == 13){
@@ -28,6 +29,7 @@ clearOutputSection.addEventListener("click", ()=>{
     var outputs = document.querySelector(".calOutput");
     outputs.style.display = "none";
 });
+
 
 function inch(){
     var len = Number(document.getElementById("len").value);

@@ -16,6 +16,12 @@ keyboardResponse.addEventListener("keypress", e =>{
     }
 });
 
+var clearOutputSection = document.querySelector(".clearBtn")
+clearOutputSection.addEventListener("click", ()=>{
+    var outputs = document.querySelector(".calOutput");
+    outputs.style.display = "none";
+});
+
 function output(){
     var sampleLen = Number(document.getElementById("sampleLen").value);
     var sampleWt = Number(document.getElementById("sampleWt").value);
